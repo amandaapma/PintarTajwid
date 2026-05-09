@@ -1,0 +1,168 @@
+/* Hero */
+.home-hero {
+  text-align: center;
+  padding: 60px 0 48px;
+}
+
+.hero-tag {
+  font-size: 1.6rem !important;
+  color: var(--accent); /* atau #A67C52 kalau mau fix coklat */
+  display: block;
+  margin-bottom: 16px;
+  line-height: 2;
+  text-align: center;
+  font-family: 'Amiri', serif; /* penting biar font sama */
+}
+
+.home-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  color: var(--forest);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: var(--stone);
+  max-width: 480px;
+  margin: 0 auto 28px;
+  line-height: 1.8;
+}
+
+.hero-cta {
+  display: inline-block;
+  background: var(--forest);
+  color: var(--cream);
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.hero-cta:hover {
+  background: var(--moss);
+  transform: translateX(3px);
+}
+
+/* Stats */
+.stats-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: var(--forest);
+  border-radius: 18px;
+  padding: 24px 48px;
+  margin-bottom: 56px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-num {
+  font-family: 'Lora', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-light);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--mist);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.stat-div {
+  width: 1px;
+  height: 36px;
+  background: rgba(196, 168, 130, 0.2);
+}
+
+/* Kategori */
+.kategori-section {
+  margin-bottom: 48px;
+}
+
+.kategori-title {
+  font-size: 1.5rem;
+  color: var(--forest);
+}
+
+/* Grid */
+.materi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.materi-card {
+  background: var(--white);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: block;
+}
+
+.materi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-top {
+  padding: 28px 20px 20px;
+  text-align: center;
+}
+
+.card-arab {
+  display: block;
+  font-size: 2rem !important;
+}
+
+.card-body {
+  padding: 16px 20px 22px;
+}
+
+.card-nama {
+  font-size: 1.15rem;
+  color: var(--forest);
+  margin-bottom: 5px;
+}
+
+.card-singkat {
+  font-size: 0.83rem;
+  color: var(--stone);
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.card-huruf {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.huruf-chip {
+  border: 1.5px solid;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}

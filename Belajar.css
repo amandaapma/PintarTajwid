@@ -1,0 +1,182 @@
+/* Progress Card */
+.progress-card {
+  background: var(--forest);
+  border-radius: 20px;
+  padding: 32px 36px;
+  margin-bottom: 40px;
+  color: var(--cream);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.progress-title {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  color: var(--mist);
+}
+
+.progress-persen {
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-light);
+}
+
+.progress-bar-wrap {
+  background: rgba(255,255,255,0.1);
+  border-radius: 99px;
+  height: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  border-radius: 99px;
+  transition: width 0.5s ease;
+}
+
+.progress-stats {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.ps-item {
+  font-size: 0.85rem;
+}
+
+.ps-hafal { color: #6fcf97; }
+.ps-belajar { color: var(--accent-light); }
+.ps-belum { color: var(--mist); }
+
+/* List */
+.belajar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.belajar-item {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--sand);
+  transition: all 0.2s;
+  flex-wrap: wrap;
+}
+
+.belajar-item.status-belajar {
+  border-left-color: var(--accent);
+  background: #fffbf5;
+}
+
+.belajar-item.status-hafal {
+  border-left-color: #27ae60;
+  background: #f5fdf8;
+}
+
+.belajar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  min-width: 0;
+}
+
+.belajar-arab {
+  font-size: 2rem !important;
+  flex-shrink: 0;
+  min-width: 80px;
+  text-align: right;
+}
+
+.belajar-info h3 {
+  font-size: 1.1rem;
+  color: var(--forest);
+  margin-bottom: 2px;
+}
+
+.belajar-kategori {
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 3px;
+}
+
+.belajar-singkat {
+  font-size: 0.82rem;
+  color: var(--stone);
+}
+
+.belajar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.detail-link {
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.status-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.sbtn {
+  background: var(--sand);
+  color: var(--stone);
+  border: 1.5px solid var(--sand);
+  padding: 7px 14px;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.sbtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.sbtn--active {
+  background: #fff3e0;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.sbtn--hafal:hover {
+  border-color: #27ae60;
+  color: #27ae60;
+}
+
+.sbtn--hafal-active {
+  background: #eafaf1;
+  border-color: #27ae60;
+  color: #27ae60;
+}
+
+@media (max-width: 640px) {
+  .belajar-item { flex-direction: column; align-items: flex-start; }
+  .belajar-right { align-items: flex-start; }
+}

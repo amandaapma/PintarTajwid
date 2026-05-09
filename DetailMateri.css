@@ -1,0 +1,248 @@
+.detail-page {
+  max-width: 780px !important;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.82rem;
+  color: var(--stone);
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.breadcrumb a {
+  color: var(--accent);
+}
+
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* Header */
+.detail-header {
+  border-radius: 20px;
+  padding: 40px 36px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.detail-kategori {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.detail-nama {
+  font-size: 2.2rem;
+  color: var(--forest);
+  margin-bottom: 10px;
+}
+
+.detail-arab {
+  display: block;
+  font-size: 2.8rem !important;
+  margin-bottom: 10px;
+}
+
+.detail-singkat {
+  font-size: 1rem;
+  color: var(--stone);
+  font-style: italic;
+}
+
+/* Body */
+.detail-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-section {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: var(--shadow);
+}
+
+.detail-section h2 {
+  font-size: 1.2rem;
+  color: var(--forest);
+  margin-bottom: 16px;
+}
+
+.detail-text {
+  color: var(--stone);
+  line-height: 1.85;
+  font-size: 0.97rem;
+}
+
+/* Huruf Grid */
+.huruf-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.huruf-box {
+  border: 2px solid;
+  border-radius: 14px;
+  padding: 12px 20px;
+  text-align: center;
+  min-width: 60px;
+}
+
+.huruf-besar {
+  font-size: 2rem !important;
+  display: block;
+  line-height: 1.5;
+}
+
+/* Cara Baca */
+.cara-baca-box {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.cb-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.cara-baca-box p {
+  color: var(--stone);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Contoh */
+.contoh-box {
+  border-left: 4px solid;
+  padding: 20px 24px;
+  background: var(--cream);
+  border-radius: 0 12px 12px 0;
+}
+
+.contoh-arab {
+  font-size: 2.4rem !important;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contoh-latin {
+  font-size: 1.05rem;
+  color: var(--dark);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.contoh-arti {
+  font-size: 0.88rem;
+  color: var(--stone);
+}
+
+/* Progres */
+.progres-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.prog-btn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border: 2px solid;
+  transition: all 0.2s;
+}
+
+.prog-btn--belajar {
+  background: white;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.prog-btn--belajar:hover,
+.prog-btn--belajar-active {
+  background: #fff3e0;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.prog-btn--hafal {
+  background: white;
+  border-color: #27ae60;
+  color: #27ae60;
+}
+
+.prog-btn--hafal:hover,
+.prog-btn--hafal-active {
+  background: #eafaf1;
+  border-color: #27ae60;
+  color: #27ae60;
+}
+
+/* Nav Prev/Next */
+.detail-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  gap: 16px;
+}
+
+.nav-btn {
+  background: white;
+  border: 1.5px solid var(--sand);
+  padding: 11px 22px;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--forest);
+  transition: all 0.2s;
+  box-shadow: var(--shadow);
+}
+
+.nav-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Not Found */
+.notfound-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 14px;
+  text-align: center;
+  padding: 40px;
+}
+
+.notfound-wrap h2 {
+  font-size: 1.8rem;
+  color: var(--forest);
+}
+
+.notfound-wrap p { color: var(--stone); }
+
+.back-btn {
+  display: inline-block;
+  background: var(--forest);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 500;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.back-btn:hover { background: var(--moss); }

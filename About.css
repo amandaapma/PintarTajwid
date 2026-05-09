@@ -1,0 +1,120 @@
+/* Container Utama */
+.about-bismillah {
+  font-size: 1.6rem !important;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 16px;
+  line-height: 2;
+  text-align: center;
+}
+
+/* Misi Section */
+.about-misi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+  align-items: center;
+}
+
+.misi-text h2 {
+  font-size: 1.7rem;
+  color: var(--forest);
+  margin-bottom: 14px;
+}
+
+.misi-text p {
+  color: var(--stone);
+  line-height: 1.85;
+  font-size: 0.97rem;
+}
+
+.misi-quote {
+  background: var(--forest);
+  border-radius: 20px;
+  padding: 36px 32px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.misi-arab {
+  font-size: 2rem !important;
+  color: var(--accent-light);
+  display: block;
+  margin-bottom: 16px;
+  line-height: 2.2;
+}
+
+.misi-terjemah {
+  color: var(--cream);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.misi-sumber {
+  color: var(--mist);
+  font-size: 0.82rem;
+}
+
+/* Fitur Section */
+.about-fitur {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  color: var(--forest);
+}
+
+.fitur-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.fitur-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 26px 22px;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.fitur-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.fitur-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.fitur-card h3 {
+  font-size: 1.1rem;
+  color: var(--forest);
+  margin-bottom: 8px;
+}
+
+.fitur-card p {
+  font-size: 0.88rem;
+  color: var(--stone);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .about-misi {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .misi-quote {
+    order: -1; /* Quote naik ke atas di layar HP agar lebih dramatis */
+  }
+}
